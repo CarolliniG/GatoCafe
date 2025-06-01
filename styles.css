@@ -320,3 +320,25 @@ footer {
   min-width: 20px;
   text-align: center;
 }
+
+.galeria-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.galeria-fotos img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.galeria-fotos img:hover {
+  transform: scale(1.05);
+}
