@@ -49,8 +49,7 @@ nav ul li a:hover {
 }
 
 .hero {
-  background: url("https://placekitten.com/100/100") no-repeat center
-    center/cover;
+  background: url("assets/banner.png") no-repeat center center/cover;
   height: 400px;
   display: flex;
   justify-content: center;
