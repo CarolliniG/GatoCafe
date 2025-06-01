@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gato Café</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Você pode adicionar fontes do Google Fonts e ícones do Font Awesome aqui -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">🐾 Gato Café</div>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#gatos">Espaço dos Gatos</a></li>
+          <li><a href="#loja">Loja</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li class="carrinho">
+            <button id="btn-carrinho" aria-label="Carrinho de Compras">
+              🛒 <span id="contador-carrinho">0</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Onde café e gatinhos se encontram para transformar seu dia!</h1>
+      </div>
+    </section>
+
+    <!-- Sobre o Gato Café -->
+    <section id="sobre">
+      <h2>Sobre o Gato Café</h2>
+      <p>
+        Bem-vindo ao Gato Café! 🐾 Um cantinho doce onde o aroma do café
+        encontra o ronronar dos gatinhos. ☕🐱 Relaxe, saboreie e faça novos
+        amigos felinos! 📍 Visite-nos no coração da cidade | 🕒 Aberto todos os
+        dias das 10h às 20h ✨ Ambiente pet-friendly • Cafés especiais • Espaço
+        Instagramável
+      </p>
+      <!-- Destaques visuais podem ser adicionados aqui -->
+    </section>
+
+    <!-- Cardápio -->
+    <section id="cardapio">
+      <h2>Cardápio Temático</h2>
+      <ul class="cardapio-lista">
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80"
+            alt="Catpuccino"
+          />
+          <strong>Catpuccino</strong> – Café com arte de gato na espuma
+        </li>
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=400&q=80"
+            alt="Waffle Gatinho"
+          />
+          <strong>Waffle Gatinho</strong> – Waffle em formato de gatinho
+        </li>
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80"
+            alt="Salgatos"
+          />
+          <strong>Salgatos</strong> – Salgados em formato de patinha
+        </li>
+        <li>
+          <img
+            src="https://images.unsplash.com/photo-1510626176961-4b5a3c0e3f7b?auto=format&fit=crop&w=400&q=80"
+            alt="Milk-shake Miauravilha"
+          />
+          <strong>Milk-shake Miauravilha</strong> – Milk-shake decorado
+        </li>
+      </ul>
+    </section>
+
+    <!-- Espaço dos Gatos -->
+    <section id="gatos">
+      <h2>Espaço dos Gatos</h2>
+      <p>
+        Conheça nossos gatinhos, brinque com eles em um ambiente seguro e, quem
+        sabe, encontre um novo amigo para adotar!
+      </p>
+
+      <div class="galeria-gatos">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=300&q=80"
+            alt="Gato para adoção 1"
+          />
+          <figcaption>Felix - 2 anos</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=300&q=80"
+            alt="Gato para adoção 2"
+          />
+          <figcaption>Luna - Filhote</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=300&q=80"
+            alt="Gato para adoção 3"
+          />
+          <figcaption>Mia - 3 anos</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=300&q=80"
+            alt="Gato para adoção 4"
+          />
+          <figcaption>Simba - 1 ano</figcaption>
+        </figure>
+      </div>
+
+      <a href="#adocao" class="btn">Quero Adotar</a>
+    </section>
+
+    <!-- Loja de Produtos -->
+    <section id="loja">
+      <h2>Loja Miauderninha</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=300&q=80"
+            alt="Caneca temática"
+          />
+          <h3>Caneca Temática</h3>
+          <p class="preco">R$ 45,00</p>
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <input type="number" min="1" value="1" />
+            <button class="mais">+</button>
+          </div>
+          <button class="btn adicionar">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img
+            src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=300&q=80"
+            alt="Almofada de patinha"
+          />
+          <h3>Almofada de Patinha</h3>
+          <p class="preco">R$ 70,00</p>
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <input type="number" min="1" value="1" />
+            <button class="mais">+</button>
+          </div>
+          <button class="btn adicionar">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img
+            src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=300&q=80"
+            alt="Camiseta exclusiva"
+          />
+          <h3>Camiseta Exclusiva</h3>
+          <p class="preco">R$ 90,00</p>
+          <div class="quantidade">
+            <button class="menos">-</button>
+            <input type="number" min="1" value="1" />
+            <button class="mais">+</button>
+          </div>
+          <button class="btn adicionar">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos e Fotos -->
+    <section id="depoimentos">
+      <h2>Clientes Miauravilhados</h2>
+      <blockquote>
+        <p>"Melhor café e melhores gatinhos da cidade! Recomendo demais."</p>
+        <cite>— Ana P.</cite>
+      </blockquote>
+      <!-- Galeria de fotos pode ser inserida aqui -->
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="info">
+        <p><strong>Endereço:</strong> Rua dos Felinos, 123 - Miaulândia</p>
+        <p><strong>Telefone:</strong> (11) 99999-9999</p>
+        <p><strong>Horário:</strong> Seg a Dom, 10h às 19h</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Gato Café. Todos os direitos reservados.</p>
+      <div class="social">
+        <!-- Ícones de redes sociais aqui -->
+      </div>
+    </footer>
+
+    <script>
+      src="script.js">
+    </script>
+  </body>
+</html>

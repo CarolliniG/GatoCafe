@@ -1,0 +1,323 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background-color: #f7d9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #a64d79;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #a64d79;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #7a2e4d;
+}
+
+.hero {
+  background: url("https://placekitten.com/100/100") no-repeat center
+    center/cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  display: inline-block;
+  background-color: #a64d79;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #7a2e4d;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+h2 {
+  color: #a64d79;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f7d9d9;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #f7d9d9;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #7a2e4d;
+  font-weight: 600;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #a64d79;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+form button {
+  background-color: #a64d79;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #7a2e4d;
+}
+
+.info p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: ;
+}
+
+.cardapio-lista {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cardapio-lista li {
+  background-color: #f7d9d9;
+  border-radius: 8px;
+  padding: 10px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+  color: #7a2e4d;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cardapio-lista img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.galeria-gatos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.galeria-gatos figure {
+  background-color: #f7d9d9;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-gatos img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.galeria-gatos figcaption {
+  font-weight: 600;
+  color: #7a2e4d;
+}
+
+#loja .produtos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.produto {
+  background-color: #f7d9d9;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.produto h3 {
+  color: #7a2e4d;
+  margin-bottom: 8px;
+}
+
+.preco {
+  font-weight: 700;
+  color: #a64d79;
+  margin-bottom: 12px;
+}
+
+.quantidade {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.quantidade button {
+  background-color: #a64d79;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.quantidade button:hover {
+  background-color: #7a2e4d;
+}
+
+.quantidade input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn.adicionar {
+  background-color: #a64d79;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.adicionar:hover {
+  background-color: #7a2e4d;
+}
+
+.carrinho {
+  position: relative;
+}
+
+#btn-carrinho {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #a64d79;
+  position: relative;
+}
+
+#contador-carrinho {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #7a2e4d;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
