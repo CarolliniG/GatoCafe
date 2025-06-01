@@ -342,3 +342,75 @@ footer {
 .galeria-fotos img:hover {
   transform: scale(1.05);
 }
+
+/* Container flex para formulário e informações lado a lado */
+.contato-container {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap; /* para responsividade */
+  margin-top: 20px;
+}
+
+/* Formulário alinhado à esquerda */
+.contato-container form {
+  flex: 1 1 400px; /* ocupa no mínimo 400px e cresce se possível */
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs e textarea ocupam 100% do form */
+.contato-container form input,
+.contato-container form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+/* Botão de envio */
+.contato-container form button {
+  width: 50%;
+  padding: 10px 0;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #a64d79;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contato-container form button:hover {
+  background-color: #7a2e4d;
+}
+
+/* Bloco de informações alinhado à direita */
+.contato-container .info {
+  flex: 0 0 250px; /* largura fixa para o bloco de infos */
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Para telas pequenas, empilha verticalmente */
+@media (max-width: 768px) {
+  .contato-container {
+    flex-direction: column;
+  }
+
+  .contato-container .info {
+    flex: none;
+    margin-top: 20px;
+  }
+
+  .contato-container form button {
+    width: 100%;
+  }
+}
